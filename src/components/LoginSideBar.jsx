@@ -31,7 +31,7 @@ function LoginSideBar ({ token, setToken, showSideBar }) {
       },
     };
 
-    const response = await fetch('http://google.hongkong.styuan990102.top:5005/user/auth/logout', body);
+    const response = await fetch('https://comp6080-ass3-backend.onrender.com/user/auth/logout', body);
 
     if (response.status === 200) {
       // clear user information

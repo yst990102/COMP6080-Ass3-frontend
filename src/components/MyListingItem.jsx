@@ -57,7 +57,7 @@ function MyListingItem ({ token, listingInfo, index, displayListings, setListing
       },
     }
 
-    const response = await fetch(`http://google.hongkong.styuan990102.top:5005/listings/${listingInfo.id}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/${listingInfo.id}`, body);
 
     if (response.status === 200) {
       // remove listing from display
@@ -79,7 +79,7 @@ function MyListingItem ({ token, listingInfo, index, displayListings, setListing
       },
     }
 
-    const response = await fetch(`http://google.hongkong.styuan990102.top:5005/listings/unpublish/${listingInfo.id}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/unpublish/${listingInfo.id}`, body);
 
     if (response.status === 200) {
       // set this listing to unpublish state

@@ -50,7 +50,7 @@ const PageManageBooking = () => {
       },
     }
 
-    const response = await fetch(`http://google.hongkong.styuan990102.top:5005/listings/${listingId}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/${listingId}`, body);
 
     if (response.status === 200) {
       // calculate number of days
@@ -170,7 +170,7 @@ const PageManageBooking = () => {
     };
 
     // get all bookings
-    const response = await fetch('http://google.hongkong.styuan990102.top:5005/bookings', body);
+    const response = await fetch('https://comp6080-ass3-backend.onrender.com/bookings', body);
 
     if (response.status === 200) {
       setup(response);

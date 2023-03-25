@@ -58,7 +58,7 @@ const PageCreateListing = () => {
       })
     };
 
-    const response = await fetch('http://google.hongkong.styuan990102.top:5005/listings/new', body);
+    const response = await fetch('https://comp6080-ass3-backend.onrender.com/listings/new', body);
 
     if (response.status === 200) {
       // successfull create

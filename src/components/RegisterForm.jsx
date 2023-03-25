@@ -46,7 +46,7 @@ function RegisterForm () {
       body: JSON.stringify({ email, password, name })
     };
 
-    const response = await fetch('http://google.hongkong.styuan990102.top:5005/user/auth/register', body);
+    const response = await fetch('https://comp6080-ass3-backend.onrender.com/user/auth/register', body);
 
     if (response.status === 200) {
       // get user login information

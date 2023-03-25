@@ -51,7 +51,7 @@ function PopUpStatus ({ id, setStatus, setBookingId, setPopUpLeaveReview }) {
       },
     }
 
-    const response = await fetch('http://google.hongkong.styuan990102.top:5005/bookings', body)
+    const response = await fetch('https://comp6080-ass3-backend.onrender.com/bookings', body)
 
     if (response.status === 200) {
       const data = await response.json();
