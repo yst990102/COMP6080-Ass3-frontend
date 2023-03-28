@@ -69,7 +69,7 @@ function PopUpBooking ({ id, price, setBook, setPopUpMessage, setMessage }) {
       })
     }
 
-    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/bookings/new/${id}`, body)
+    const response = await fetch(`https://comp6080-ass3-backend.up.railway.app/bookings/new/${id}`, body)
 
     if (response.status === 200) {
       // popup success message

@@ -51,7 +51,7 @@ function PopUpStatus ({ id, setStatus, setBookingId, setPopUpLeaveReview }) {
       },
     }
 
-    const response = await fetch('https://comp6080-ass3-backend.onrender.com/bookings', body)
+    const response = await fetch('https://comp6080-ass3-backend.up.railway.app/bookings', body)
 
     if (response.status === 200) {
       const data = await response.json();

@@ -36,7 +36,7 @@ function LoginForm () {
     };
 
     // send request
-    const response = await fetch('https://comp6080-ass3-backend.onrender.com/user/auth/login', body);
+    const response = await fetch('https://comp6080-ass3-backend.up.railway.app/user/auth/login', body);
 
     if (response.status === 200) {
       // get user login information

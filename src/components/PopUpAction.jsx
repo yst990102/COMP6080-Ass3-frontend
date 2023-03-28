@@ -28,7 +28,7 @@ function PopUpAction ({ id, setMsg, setSuccess, setPopUp }) {
       },
     }
 
-    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/bookings/${measure}/${id}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.up.railway.app/bookings/${measure}/${id}`, body);
 
     if (response.status === 200) {
       // action successfull complete

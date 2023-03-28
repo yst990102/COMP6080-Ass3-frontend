@@ -66,7 +66,7 @@ function PopUpLeaveReview ({ listingId, bookingId, setPopUpLeaveReview, setMessa
         })
       }
 
-      const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/${listingId}/review/${bookingId}`, body)
+      const response = await fetch(`https://comp6080-ass3-backend.up.railway.app/listings/${listingId}/review/${bookingId}`, body)
 
       if (response.status === 200) {
         // successfull send review

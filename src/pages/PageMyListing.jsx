@@ -50,7 +50,7 @@ const PageMyListing = () => {
       },
     };
 
-    const response = await fetch('https://comp6080-ass3-backend.onrender.com/listings', body);
+    const response = await fetch('https://comp6080-ass3-backend.up.railway.app/listings', body);
     if (response.status === 200) {
       const data = await response.json();
       const myListings = []; // user listings
@@ -67,7 +67,7 @@ const PageMyListing = () => {
       for (const listing of data.listings) {
         if (listing.owner === email) {
           id.push(listing.id);
-          myListings.push(fetch(`https://comp6080-ass3-backend.onrender.com/listings/${listing.id}`, detailBody));
+          myListings.push(fetch(`https://comp6080-ass3-backend.up.railway.app/listings/${listing.id}`, detailBody));
         }
       }
 

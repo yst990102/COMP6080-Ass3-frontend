@@ -69,7 +69,7 @@ const PageListingDetail = () => {
       headers: { 'Content-type': 'application/json' }
     };
 
-    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/${id}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.up.railway.app/listings/${id}`, body);
 
     // store listing information
     if (response.status === 200) {

@@ -58,7 +58,7 @@ const PageCreateListing = () => {
       })
     };
 
-    const response = await fetch('https://comp6080-ass3-backend.onrender.com/listings/new', body);
+    const response = await fetch('https://comp6080-ass3-backend.up.railway.app/listings/new', body);
 
     if (response.status === 200) {
       // successfull create

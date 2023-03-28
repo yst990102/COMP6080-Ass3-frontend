@@ -48,7 +48,7 @@ const PageHome = () => {
         'Content-type': 'application/json',
       },
     }
-    return fetch(`https://comp6080-ass3-backend.onrender.com/listings/${id}`, body);
+    return fetch(`https://comp6080-ass3-backend.up.railway.app/listings/${id}`, body);
   }
 
   // get all listings
@@ -62,7 +62,7 @@ const PageHome = () => {
       },
     };
 
-    const response = await fetch('https://comp6080-ass3-backend.onrender.com/listings', body);
+    const response = await fetch('https://comp6080-ass3-backend.up.railway.app/listings', body);
 
     if (response.status === 200) {
       // booking id
@@ -70,7 +70,7 @@ const PageHome = () => {
 
       // if user login, get all the booking id
       if (token) {
-        const allBookingsResponse = await fetch('https://comp6080-ass3-backend.onrender.com/bookings', body);
+        const allBookingsResponse = await fetch('https://comp6080-ass3-backend.up.railway.app/bookings', body);
 
         if (allBookingsResponse.status === 200) {
           const allBookings = await allBookingsResponse.json();

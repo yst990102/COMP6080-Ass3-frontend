@@ -63,7 +63,7 @@ function PopUpDate ({ token, listingInfo, listing, setListing, setPopUpDate, set
       body: JSON.stringify({ availability })
     };
 
-    const response = await fetch(`https://comp6080-ass3-backend.onrender.com/listings/publish/${listingInfo.id}`, body);
+    const response = await fetch(`https://comp6080-ass3-backend.up.railway.app/listings/publish/${listingInfo.id}`, body);
 
     if (response.status === 200) {
       // set listing status to be published
